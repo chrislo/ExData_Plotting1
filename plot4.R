@@ -1,4 +1,5 @@
 source('load_data.R')
+png('plot4.png')
 
 par(mfrow=c(2,2))
 
@@ -43,5 +44,4 @@ plot(data$DateTime, data$Global_reactive_power,
      type = "l"
      )
 
-dev.copy(png, 'plot4.png')
 dev.off()

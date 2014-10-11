@@ -1,4 +1,5 @@
 source('load_data.R')
+png('plot1.png')
 
 hist(data$Global_active_power,
      col = "red",
@@ -7,5 +8,4 @@ hist(data$Global_active_power,
      ylab = "Frequency"
      )
 
-dev.copy(png, 'plot1.png')
 dev.off()

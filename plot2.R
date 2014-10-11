@@ -1,4 +1,5 @@
 source('load_data.R')
+png('plot2.png')
 
 plot(data$DateTime, data$Global_active_power,
      ylab = "Global Active Power (kilowatts)",
@@ -6,5 +7,4 @@ plot(data$DateTime, data$Global_active_power,
      type = "l"
      )
 
-dev.copy(png, 'plot2.png')
 dev.off()

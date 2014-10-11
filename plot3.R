@@ -1,4 +1,5 @@
 source('load_data.R')
+png('plot3.png')
 
 plot(data$DateTime, data$Sub_metering_1,
      ylab = "Energy sub metering",
@@ -14,5 +15,4 @@ legend("topright",
        col = c("black", "red", "blue"),
        lty=1)
 
-dev.copy(png, 'plot3.png')
 dev.off()
